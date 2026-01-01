@@ -133,118 +133,6 @@
             bindings = <&kp LS(LG(LC(RIGHT_BRACKET)))>;
             label = "NAV_FORWARD";
         };
-
-        hyper_1: hyper_1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(NUMBER_1))))>;
-            label = "HYPER_1";
-        };
-
-        hyper_2: hyper_2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(NUMBER_2))))>;
-            label = "HYPER_2";
-        };
-
-        hyper_3: hyper_3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(NUMBER_3))))>;
-            label = "HYPER_3";
-        };
-
-        hyper_4: hyper_4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(NUMBER_4))))>;
-            label = "HYPER_4";
-        };
-
-        hyper_5: hyper_5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(NUMBER_5))))>;
-            label = "HYPER_5";
-        };
-
-        hyper_6: hyper_6 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(NUMBER_6))))>;
-            label = "HYPER_6";
-        };
-
-        hyper_7: hyper_7 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(NUMBER_7))))>;
-            label = "HYPER_7";
-        };
-
-        hyper_8: hyper_8 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(NUMBER_8))))>;
-            label = "HYPER_8";
-        };
-
-        hyper_9: hyper_9 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(NUMBER_9))))>;
-            label = "HYPER_9";
-        };
-
-        hyper_0: hyper_0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(N0))))>;
-            label = "HYPER_0";
-        };
-
-        meh_z: meh_z {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(Z)))>;
-            label = "MEH_Z";
-        };
-
-        meh_x: meh_x {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(X)))>;
-            label = "MEH_X";
-        };
-
-        meh_c: meh_c {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(C)))>;
-            label = "MEH_C";
-        };
-
-        meh_v: meh_v {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(V)))>;
-            label = "MEH_V";
-        };
-
-        meh_b: meh_b {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(B)))>;
-            label = "MEH_B";
-        };
-
-        meh_slash: meh_slash {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(SLASH)))>;
-            label = "MEH_SLASH";
-        };
     };
 
     keymap {
@@ -263,8 +151,18 @@
 &kp MINUS         &kp N1             &kp N2               &kp N3           &kp N4                           &kp N5                                          &kp N6       &kp N7                             &kp N8            &kp N9                &kp N0                      &kp PLUS
 &kp TAB           &kp Q              &kp W                &kp E            &kp R                            &kp T                                           &kp Y        &kp U                              &kp I             &kp O                 &kp P                       &kp BACKSLASH
 &kp LEFT_CONTROL  &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_GUI F                  &kp G                                           &kp H        &hmr RIGHT_GUI J                   &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL L  &hmr RIGHT_SHIFT SEMICOLON  &kp APOS
-&kp LSHFT         &lt 4 Z            &kp X                &kp C            &kp V                            &kp B            &kp LEFT_GUI    &kp RIGHT_GUI  &kp N        &kp M                              &kp COMMA         &kp DOT               &lt 5 SLASH                 &kp RSHFT
-                                                          &kp LEFT_ALT     &mt LS(LA(LEFT_CONTROL)) ESCAPE  &lt 1 BACKSPACE  &lt 3 DELETE    &lt 3 ENTER    &lt 2 SPACE  &mt RS(RA(RG(RIGHT_CONTROL))) TAB  &kp LEFT_ALT
+&mo 5             &lt 5 Z            &kp X                &kp C            &kp V                            &kp B            &kp LEFT_GUI    &kp RIGHT_GUI  &kp N        &kp M                              &kp COMMA         &kp DOT               &lt 6 SLASH                 &mo 6
+                                                          &kp LEFT_ALT     &mt LS(LA(LEFT_CONTROL)) ESCAPE  &lt 2 BACKSPACE  &lt 4 DELETE    &lt 4 ENTER    &lt 3 SPACE  &mt RS(RA(RG(RIGHT_CONTROL))) TAB  &kp LEFT_ALT
+            >;
+        };
+
+        gaming {
+            bindings = <
+&trans          &trans  &trans  &trans  &trans   &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans   &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &kp A   &kp S   &kp D   &kp F    &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp Z   &trans  &trans  &trans   &trans         &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &kp ESC  &kp BACKSPACE  &kp SPACE    &trans  &trans  &trans  &trans
             >;
         };
 
@@ -309,8 +207,8 @@
 &trans  &trans  &trans      &trans             &trans           &trans                     &trans   &trans    &trans      &trans      &trans   &trans
 &trans  &kp F1  &kp F2      &kp F3             &kp F4           &kp F5                     &kp F6   &kp F7    &kp F8      &kp F9      &kp F10  &trans
 &trans  &trans  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp F11                    &kp F12  &kp C_PP  &kp C_PREV  &kp C_NEXT  &trans   &trans
-&trans  &trans  &trans      &kp C_BRI_DEC      &kp C_BRI_UP     &trans   &tog 0    &tog 8  &trans   &trans    &trans      &trans      &trans   &trans
-                            &trans             &trans           &trans   &trans    &trans  &trans   &trans    &trans
+&trans  &trans  &trans      &kp C_BRI_DEC      &kp C_BRI_UP     &trans   &tog 0    &tog 1  &trans   &trans    &trans      &trans      &trans   &trans
+                            &trans             &trans           &to 0    &trans    &trans  &to 1    &trans    &trans
             >;
 
             label = "fl";
@@ -321,8 +219,8 @@
 &trans  &trans  &trans      &trans             &trans           &trans                     &trans   &trans    &trans      &trans      &trans   &trans
 &trans  &kp F1  &kp F2      &kp F3             &kp F4           &kp F5                     &kp F6   &kp F7    &kp F8      &kp F9      &kp F10  &trans
 &trans  &trans  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp F11                    &kp F12  &kp C_PP  &kp C_PREV  &kp C_NEXT  &trans   &trans
-&trans  &trans  &trans      &kp C_BRI_DEC      &kp C_BRI_UP     &trans   &tog 0    &tog 8  &trans   &trans    &trans      &trans      &trans   &trans
-                            &trans             &trans           &trans   &trans    &trans  &trans   &trans    &trans
+&trans  &trans  &trans      &kp C_BRI_DEC      &kp C_BRI_UP     &trans   &tog 0    &tog 1  &trans   &trans    &trans      &trans      &trans   &trans
+                            &trans             &trans           &to 0    &trans    &trans  &to 1    &trans    &trans
             >;
 
             label = "fr";
@@ -333,8 +231,8 @@
 &trans  &trans  &trans    &trans  &trans  &trans                        &trans        &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans    &trans  &trans  &trans                        &trans        &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans    &trans  &trans  &bt BT_CLR                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
-&trans  &trans  &kp CAPS  &trans  &trans  &trans      &tog 0    &tog 8  &trans        &trans        &trans        &trans        &trans        &trans
-                          &trans  &trans  &trans      &trans    &trans  &trans        &trans        &trans
+&trans  &trans  &kp CAPS  &trans  &trans  &trans      &tog 0    &tog 1  &trans        &trans        &trans        &trans        &trans        &trans
+                          &trans  &trans  &to 0       &trans    &trans  &to 1         &trans        &trans
             >;
 
             label = "fc";
@@ -342,24 +240,14 @@
 
         navigation {
             bindings = <
-&trans  &trans          &trans               &trans            &trans            &trans                          &trans    &trans         &trans        &trans     &trans           &trans
-&trans  &hyper_1        &hyper_2             &hyper_3          &hyper_4          &hyper_5                        &hyper_6  &hyper_7       &hyper_8      &hyper_9   &hyper_9         &trans
-&trans  &kp LEFT_SHIFT  &hnb LEFT_CONTROL 0  &hnpt LEFT_ALT 0  &hnnt LEFT_GUI 0  &nav_forward                    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp RIGHT_SHIFT  &trans
-&trans  &meh_z          &meh_x               &meh_c            &meh_v            &meh_b        &trans    &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &meh_slash       &trans
-                                             &trans            &trans            &trans        &trans    &trans  &trans    &trans         &trans
+&trans  &trans                        &trans                        &trans                        &trans                        &trans                                          &trans                        &trans                        &trans                        &trans                        &trans                        &trans
+&trans  &kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LC(LG(NUMBER_3))))  &kp LS(LA(LC(LG(NUMBER_4))))  &kp LA(LS(LC(LG(NUMBER_5))))                    &kp LS(LA(LC(LG(NUMBER_6))))  &kp LS(LA(LC(LG(NUMBER_7))))  &kp LS(LA(LC(LG(NUMBER_8))))  &kp LS(LA(LC(LG(NUMBER_9))))  &kp LA(LS(LC(LG(NUMBER_0))))  &trans
+&trans  &kp LEFT_SHIFT                &hnb LEFT_CONTROL 0           &hnpt LEFT_ALT 0              &hnnt LEFT_GUI 0              &nav_forward                                    &kp LEFT                      &kp DOWN                      &kp UP_ARROW                  &kp RIGHT                     &kp RIGHT_SHIFT               &trans
+&trans  &kp LS(LC(LA(Z)))             &kp LS(LA(LC(X)))             &kp LS(LA(LC(C)))             &kp LS(LA(LC(V)))             &kp LS(LA(LC(B)))             &trans    &trans  &kp HOME                      &kp PAGE_DOWN                 &kp PAGE_UP                   &kp END                       &kp LS(LA(LC(SLASH)))         &trans
+                                                                    &trans                        &trans                        &trans                        &trans    &trans  &trans                        &trans                        &trans
             >;
 
             label = "nav";
-        };
-
-        gaming {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans   &trans                               &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans   &trans                               &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp A   &kp S   &kp D   &kp F    &trans                               &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp Z   &trans  &trans  &trans   &trans         &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &kp ESC  &kp BACKSPACE  &kp DELETE    &trans  &trans  &trans  &trans
-            >;
         };
     };
 
@@ -367,13 +255,13 @@
         compatible = "zmk,conditional-layers";
 
         Navigation {
-            if-layers = <1 2>;
-            then-layer = <7>;
+            if-layers = <2 3>;
+            then-layer = <8>;
         };
 
         Function {
-            if-layers = <4 5>;
-            then-layer = <6>;
+            if-layers = <5 6>;
+            then-layer = <7>;
         };
     };
 };
